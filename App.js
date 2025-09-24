@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-import { C } from "/screens/component.jsx";
+// import { C } from "/screens/component.jsx";
 import TabNavigator from './components/stack.jsx';
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -12,7 +12,6 @@ export default function App() {
     <NavigationContainer>
       <Tab.Navigator initialRouteName="A" screenOptions={{ headerShown: false }}>
         <Tab.Screen name="Tabs" component={TabNavigator} />
-        <Tab.Screen name="C" component={C} />
       </Tab.Navigator>
     </NavigationContainer>
   );
