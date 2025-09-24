@@ -1,6 +1,7 @@
-// import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import A, { B, C } from "./screens/component.jsx";
+
+import { C } from "./screens/component.jsx";
+import TabNavigator from './components/stack.jsx';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -10,8 +11,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Tab.Navigator initialRouteName="A" screenOptions={{ headerShown: false }}>
-        <Tab.Screen name="A" component={A} />
-        <Tab.Screen name="B" component={B} />
+        <Tab.Screen name="Tabs" component={TabNavigator} />
         <Tab.Screen name="C" component={C} />
       </Tab.Navigator>
     </NavigationContainer>
