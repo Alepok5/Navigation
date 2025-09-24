@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-import { C } from "./screens/component.jsx";
+import { C } from "/screens/component.jsx";
 import TabNavigator from './components/stack.jsx';
 
 import { NavigationContainer } from '@react-navigation/native';
