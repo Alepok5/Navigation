@@ -7,13 +7,13 @@ const Stack = createNativeStackNavigator();
 export default function TabNavigator (){
     return (
         <Stack.Navigator
-        initialRouteName="Tabs/A"
+        initialRouteName="A"
         screenOptions={{
             headerShown: false,
         }}>
             <Stack.Screen
                 initialParams={{
-                    screen: 'Tabs/A',
+                    screen: 'A',
                 }}
                 options={{
                     unmountOnBlur: true,
@@ -24,7 +24,7 @@ export default function TabNavigator (){
 
             <Stack.Screen
                 initialParams={{
-                    screen: 'Tabs/B',
+                    screen: 'B',
                 }}
                 options={{
                     unmountOnBlur: true,
